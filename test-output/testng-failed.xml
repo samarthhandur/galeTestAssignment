@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [galePartnersTestAssignment.unitTestClass]" parallel="none">
+  <test name="galePartnersTestAssignment.unitTestClass(failed)" parallel="none">
+    <classes>
+      <class name="galePartnersTestAssignment.unitTestClass">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="emailFieldTestForInValidInput"/>
+          <include name="testSelectPhoneType"/>
+          <include name="firstNameFieldTestForInValidInput"/>
+          <include name="firstNameFieldTestForOutOfBoundInput"/>
+        </methods>
+      </class> <!-- galePartnersTestAssignment.unitTestClass -->
+    </classes>
+  </test> <!-- galePartnersTestAssignment.unitTestClass(failed) -->
+</suite> <!-- Failed suite [galePartnersTestAssignment.unitTestClass] -->

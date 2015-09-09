@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-galePartnersTestAssignment.unitTestClass">
+              <span class="suite-name border-failed">galePartnersTestAssignment.unitTestClass</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-galePartnersTestAssignment.unitTestClass">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-galePartnersTestAssignment.unitTestClass">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-galePartnersTestAssignment.unitTestClass">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-galePartnersTestAssignment.unitTestClass">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-galePartnersTestAssignment.unitTestClass">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-galePartnersTestAssignment.unitTestClass">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-galePartnersTestAssignment.unitTestClass">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">17 methods, 4 failed,   13 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-galePartnersTestAssignment.unitTestClass" class="hide-methods failed suite-galePartnersTestAssignment.unitTestClass"> (hide)</a> <!-- hide-methods failed suite-galePartnersTestAssignment.unitTestClass -->
+                      <a href="#" panel-name="suite-galePartnersTestAssignment.unitTestClass" class="show-methods failed suite-galePartnersTestAssignment.unitTestClass"> (show)</a> <!-- show-methods failed suite-galePartnersTestAssignment.unitTestClass -->
+                    </span>
+                    <div class="method-list-content failed suite-galePartnersTestAssignment.unitTestClass">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-galePartnersTestAssignment.unitTestClass" title="galePartnersTestAssignment.unitTestClass" hash-for-method="emailFieldTestForInValidInput">emailFieldTestForInValidInput</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-galePartnersTestAssignment.unitTestClass" title="galePartnersTestAssignment.unitTestClass" hash-for-method="firstNameFieldTestForInValidInput">firstNameFieldTestForInValidInput</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-galePartnersTestAssignment.unitTestClass" title="galePartnersTestAssignment.unitTestClass" hash-for-method="firstNameFieldTestForOutOfBoundInput">firstNameFieldTestForOutOfBoundInput</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-galePartnersTestAssignment.unitTestClass" title="galePartnersTestAssignment.unitTestClass" hash-for-method="testSelectPhoneType">testSelectPhoneType</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-galePartnersTestAssignment.unitTestClass -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-galePartnersTestAssignment.unitTestClass" class="hide-methods passed suite-galePartnersTestAssignment.unitTestClass"> (hide)</a> <!-- hide-methods passed suite-galePartnersTestAssignment.unitTestClass -->
+                      <a href="#" panel-name="suite-galePartnersTestAssignment.unitTestClass" class="show-methods passed suite-galePartnersTestAssignment.unitTestClass"> (show)</a> <!-- show-methods passed suite-galePartnersTestAssignment.unitTestClass -->
+                    </span>
+                    <div class="method-list-content passed suite-galePartnersTestAssignment.unitTestClass">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-galePartnersTestAssignment.unitTestClass" title="galePartnersTestAssignment.unitTestClass" hash-for-method="emailFieldTestForValidInput">emailFieldTestForValidInput</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-galePartnersTestAssignment.unitTestClass" title="galePartnersTestAssignment.unitTestClass" hash-for-method="firstNameFieldTestForValidInput">firstNameFieldTestForValidInput</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-galePartnersTestAssignment.unitTestClass" title="galePartnersTestAssignment.unitTestClass" hash-for-method="firstNameFieldTestWithSpacesInInput">firstNameFieldTestWithSpacesInInput</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-galePartnersTestAssignment.unitTestClass" title="galePartnersTestAssignment.unitTestClass" hash-for-method="lastNameFieldTestForInValidInput">lastNameFieldTestForInValidInput</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-galePartnersTestAssignment.unitTestClass" title="galePartnersTestAssignment.unitTestClass" hash-for-method="lastNameFieldTestForOutOfBoundInput">lastNameFieldTestForOutOfBoundInput</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-galePartnersTestAssignment.unitTestClass" title="galePartnersTestAssignment.unitTestClass" hash-for-method="lastNameFieldTestForValidInput">lastNameFieldTestForValidInput</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-galePartnersTestAssignment.unitTestClass" title="galePartnersTestAssignment.unitTestClass" hash-for-method="lastNameFieldTestWithSpacesInInput">lastNameFieldTestWithSpacesInInput</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-galePartnersTestAssignment.unitTestClass" title="galePartnersTestAssignment.unitTestClass" hash-for-method="testDisappearanceOfErrorMessageFirstNameInput">testDisappearanceOfErrorMessageFirstNameInput</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-galePartnersTestAssignment.unitTestClass" title="galePartnersTestAssignment.unitTestClass" hash-for-method="testDisappearanceOfErrorMessageLastNameInput">testDisappearanceOfErrorMessageLastNameInput</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-galePartnersTestAssignment.unitTestClass" title="galePartnersTestAssignment.unitTestClass" hash-for-method="testEnterInValidPhoneNumber">testEnterInValidPhoneNumber</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-galePartnersTestAssignment.unitTestClass" title="galePartnersTestAssignment.unitTestClass" hash-for-method="testEnterInValidPostCode">testEnterInValidPostCode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-galePartnersTestAssignment.unitTestClass" title="galePartnersTestAssignment.unitTestClass" hash-for-method="testEnterValidPhoneNumber">testEnterValidPhoneNumber</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-galePartnersTestAssignment.unitTestClass" title="galePartnersTestAssignment.unitTestClass" hash-for-method="testEnterValidPostCode">testEnterValidPostCode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-galePartnersTestAssignment.unitTestClass -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-galePartnersTestAssignment.unitTestClass" class="panel galePartnersTestAssignment.unitTestClass">
+          <div class="suite-galePartnersTestAssignment.unitTestClass-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">galePartnersTestAssignment.unitTestClass</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="emailFieldTestForInValidInput">
+                  </a> <!-- emailFieldTestForInValidInput -->
+                  <span class="method-name">emailFieldTestForInValidInput</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at galePartnersTestAssignment.unitTestClass.emailFieldTestForInValidInput(unitTestClass.java:55)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="firstNameFieldTestForInValidInput">
+                  </a> <!-- firstNameFieldTestForInValidInput -->
+                  <span class="method-name">firstNameFieldTestForInValidInput</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at galePartnersTestAssignment.unitTestClass.firstNameFieldTestForInValidInput(unitTestClass.java:77)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="firstNameFieldTestForOutOfBoundInput">
+                  </a> <!-- firstNameFieldTestForOutOfBoundInput -->
+                  <span class="method-name">firstNameFieldTestForOutOfBoundInput</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at galePartnersTestAssignment.unitTestClass.firstNameFieldTestForOutOfBoundInput(unitTestClass.java:88)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSelectPhoneType">
+                  </a> <!-- testSelectPhoneType -->
+                  <span class="method-name">testSelectPhoneType</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [false] but found [true]
+	at galePartnersTestAssignment.unitTestClass.testSelectPhoneType(unitTestClass.java:175)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-galePartnersTestAssignment.unitTestClass-class-failed -->
+          <div class="suite-galePartnersTestAssignment.unitTestClass-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">galePartnersTestAssignment.unitTestClass</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="emailFieldTestForValidInput">
+                  </a> <!-- emailFieldTestForValidInput -->
+                  <span class="method-name">emailFieldTestForValidInput</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="firstNameFieldTestForValidInput">
+                  </a> <!-- firstNameFieldTestForValidInput -->
+                  <span class="method-name">firstNameFieldTestForValidInput</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="firstNameFieldTestWithSpacesInInput">
+                  </a> <!-- firstNameFieldTestWithSpacesInInput -->
+                  <span class="method-name">firstNameFieldTestWithSpacesInInput</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="lastNameFieldTestForInValidInput">
+                  </a> <!-- lastNameFieldTestForInValidInput -->
+                  <span class="method-name">lastNameFieldTestForInValidInput</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="lastNameFieldTestForOutOfBoundInput">
+                  </a> <!-- lastNameFieldTestForOutOfBoundInput -->
+                  <span class="method-name">lastNameFieldTestForOutOfBoundInput</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="lastNameFieldTestForValidInput">
+                  </a> <!-- lastNameFieldTestForValidInput -->
+                  <span class="method-name">lastNameFieldTestForValidInput</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="lastNameFieldTestWithSpacesInInput">
+                  </a> <!-- lastNameFieldTestWithSpacesInInput -->
+                  <span class="method-name">lastNameFieldTestWithSpacesInInput</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDisappearanceOfErrorMessageFirstNameInput">
+                  </a> <!-- testDisappearanceOfErrorMessageFirstNameInput -->
+                  <span class="method-name">testDisappearanceOfErrorMessageFirstNameInput</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDisappearanceOfErrorMessageLastNameInput">
+                  </a> <!-- testDisappearanceOfErrorMessageLastNameInput -->
+                  <span class="method-name">testDisappearanceOfErrorMessageLastNameInput</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEnterInValidPhoneNumber">
+                  </a> <!-- testEnterInValidPhoneNumber -->
+                  <span class="method-name">testEnterInValidPhoneNumber</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEnterInValidPostCode">
+                  </a> <!-- testEnterInValidPostCode -->
+                  <span class="method-name">testEnterInValidPostCode</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEnterValidPhoneNumber">
+                  </a> <!-- testEnterValidPhoneNumber -->
+                  <span class="method-name">testEnterValidPhoneNumber</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEnterValidPostCode">
+                  </a> <!-- testEnterValidPostCode -->
+                  <span class="method-name">testEnterValidPostCode</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-galePartnersTestAssignment.unitTestClass-class-passed -->
+        </div> <!-- panel galePartnersTestAssignment.unitTestClass -->
+        <div panel-name="test-xml-galePartnersTestAssignment.unitTestClass" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/Samarth/Documents/Selenium/Workspace/galePartnersTestAssignment/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;galePartnersTestAssignment.unitTestClass&quot; parallel=&quot;none&quot;&gt;
+  &lt;test name=&quot;galePartnersTestAssignment.unitTestClass&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;galePartnersTestAssignment.unitTestClass&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- galePartnersTestAssignment.unitTestClass --&gt;
+&lt;/suite&gt; &lt;!-- galePartnersTestAssignment.unitTestClass --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-galePartnersTestAssignment.unitTestClass" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for galePartnersTestAssignment.unitTestClass</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">galePartnersTestAssignment.unitTestClass (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-galePartnersTestAssignment.unitTestClass" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for galePartnersTestAssignment.unitTestClass</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-galePartnersTestAssignment.unitTestClass" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for galePartnersTestAssignment.unitTestClass</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_galePartnersTestAssignment.unitTestClass');
+function tableData_galePartnersTestAssignment.unitTestClass() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(17);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'emailFieldTestForInValidInput')
+data.setCell(0, 2, 'galePartnersTestAssignment.unitTestClass')
+data.setCell(0, 3, 33072);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testSelectPhoneType')
+data.setCell(1, 2, 'galePartnersTestAssignment.unitTestClass')
+data.setCell(1, 3, 19475);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'emailFieldTestForValidInput')
+data.setCell(2, 2, 'galePartnersTestAssignment.unitTestClass')
+data.setCell(2, 3, 19167);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'firstNameFieldTestForValidInput')
+data.setCell(3, 2, 'galePartnersTestAssignment.unitTestClass')
+data.setCell(3, 3, 18813);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testDisappearanceOfErrorMessageLastNameInput')
+data.setCell(4, 2, 'galePartnersTestAssignment.unitTestClass')
+data.setCell(4, 3, 18212);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'firstNameFieldTestForInValidInput')
+data.setCell(5, 2, 'galePartnersTestAssignment.unitTestClass')
+data.setCell(5, 3, 18044);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testEnterValidPhoneNumber')
+data.setCell(6, 2, 'galePartnersTestAssignment.unitTestClass')
+data.setCell(6, 3, 18034);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testDisappearanceOfErrorMessageFirstNameInput')
+data.setCell(7, 2, 'galePartnersTestAssignment.unitTestClass')
+data.setCell(7, 3, 17821);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'lastNameFieldTestForValidInput')
+data.setCell(8, 2, 'galePartnersTestAssignment.unitTestClass')
+data.setCell(8, 3, 17567);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testEnterValidPostCode')
+data.setCell(9, 2, 'galePartnersTestAssignment.unitTestClass')
+data.setCell(9, 3, 17519);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'lastNameFieldTestWithSpacesInInput')
+data.setCell(10, 2, 'galePartnersTestAssignment.unitTestClass')
+data.setCell(10, 3, 17466);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'firstNameFieldTestForOutOfBoundInput')
+data.setCell(11, 2, 'galePartnersTestAssignment.unitTestClass')
+data.setCell(11, 3, 17412);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'firstNameFieldTestWithSpacesInInput')
+data.setCell(12, 2, 'galePartnersTestAssignment.unitTestClass')
+data.setCell(12, 3, 17364);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testEnterInValidPhoneNumber')
+data.setCell(13, 2, 'galePartnersTestAssignment.unitTestClass')
+data.setCell(13, 3, 8156);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testEnterInValidPostCode')
+data.setCell(14, 2, 'galePartnersTestAssignment.unitTestClass')
+data.setCell(14, 3, 7662);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'lastNameFieldTestForInValidInput')
+data.setCell(15, 2, 'galePartnersTestAssignment.unitTestClass')
+data.setCell(15, 3, 7485);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'lastNameFieldTestForOutOfBoundInput')
+data.setCell(16, 2, 'galePartnersTestAssignment.unitTestClass')
+data.setCell(16, 3, 7471);
+window.suiteTableData['galePartnersTestAssignment.unitTestClass']= { tableData: data, tableDiv: 'times-div-galePartnersTestAssignment.unitTestClass'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 4 minutes</span>
+              <div id="times-div-galePartnersTestAssignment.unitTestClass">
+              </div> <!-- times-div-galePartnersTestAssignment.unitTestClass -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-galePartnersTestAssignment.unitTestClass" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for galePartnersTestAssignment.unitTestClass</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-galePartnersTestAssignment.unitTestClass" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-galePartnersTestAssignment.unitTestClass" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">galePartnersTestAssignment.unitTestClass</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">emailFieldTestForInValidInput</span>
+                <span class="method-start">5435 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">emailFieldTestForValidInput</span>
+                <span class="method-start">38511 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">firstNameFieldTestForInValidInput</span>
+                <span class="method-start">57680 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">firstNameFieldTestForOutOfBoundInput</span>
+                <span class="method-start">75728 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">firstNameFieldTestForValidInput</span>
+                <span class="method-start">93142 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">firstNameFieldTestWithSpacesInInput</span>
+                <span class="method-start">111957 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">lastNameFieldTestForInValidInput</span>
+                <span class="method-start">129323 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">lastNameFieldTestForOutOfBoundInput</span>
+                <span class="method-start">136809 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">lastNameFieldTestForValidInput</span>
+                <span class="method-start">144282 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">lastNameFieldTestWithSpacesInInput</span>
+                <span class="method-start">161851 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDisappearanceOfErrorMessageFirstNameInput</span>
+                <span class="method-start">179319 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDisappearanceOfErrorMessageLastNameInput</span>
+                <span class="method-start">197142 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testEnterInValidPhoneNumber</span>
+                <span class="method-start">215356 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testEnterInValidPostCode</span>
+                <span class="method-start">223513 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testEnterValidPhoneNumber</span>
+                <span class="method-start">231176 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testEnterValidPostCode</span>
+                <span class="method-start">249211 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testSelectPhoneType</span>
+                <span class="method-start">266731 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">286208 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

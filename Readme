@@ -1,0 +1,21 @@
+   1. Name Scenarios:
+      a. Assert the size of the entered text in all the text boxes.
+      b. Assert the special/numeric characters inside the "Name" text boxes.
+      c. Assert the email entered during Start-up page is same in registration form.
+      d. Check if spaces are counted as characters.
+      e. Assert error messages on clearing the data inside text boxes.
+   
+   2. EmailId scenarios: 
+      a. Enter invalid email id and check for error message.
+      b. Edit the invalid email and enter valid email and check if error message disappears.
+      c. Assert error message on deletion of email.
+      d. Check if user is able to edit the email id on registration page.
+   
+   3. Phone number Scenarios:
+      a. Check if user can able to enter only numerics in phone number text fields
+      b. Assert error message on deleting the entered phn number.
+      c. Assert if error message disappears on entering correct number.
+      
+   4. Post code scenarios:
+      a. Assert that user can enter the valid post code
+      b. Check that user is not allowed to enter anything other than format (char-int-char-int-char-int)
