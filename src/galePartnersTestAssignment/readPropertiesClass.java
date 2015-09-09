@@ -7,7 +7,7 @@ import java.util.Properties;
 
 public class readPropertiesClass {
 	public String getProp(String key){
-		File file = new File("/Users/Samarth/Documents/Selenium/Workspace/galePartnersTestAssignment/src/galePartnersTestAssignment/object.properties");
+		File file = new File("./src/galePartnersTestAssignment/object.properties");
 	    FileInputStream inputFile = null;
 		try{
 	    	inputFile = new FileInputStream(file);
